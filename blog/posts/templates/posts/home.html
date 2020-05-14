@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block body_block %}
+    <h1>{{name}}</h1>
+    <p>this is paragraph home page </p>
+        <br>
+    <hr>
+    {% for post in posts %}
+    <h3>{{post.title}}</h3>
+    <p>{{post.post}}</p>
+        <hr style="border-color:red;">
+    {% endfor %}
+{% endblock %}
